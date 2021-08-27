@@ -33,18 +33,19 @@
 
         <h2>Temperature Converter</h2>
         <br>
-        <p>Convert your temperature here.</p>
-        <button class="btn" onClick="">Convert Temp</button>
+        <p>Convert your temperature here. Click the button to get started.</p>
+        <button class="btn" onClick="convertDegToFah()">Convert Temperature from Degrees Celsius to Fahrenheit</button>
+        <button class="btn" onClick="convertFahToDeg()">Convert Temperature from Fahrenheit to Degrees Celsius</button>
+        
         <br>
         <br>
-        <p id="garysMessage"></p>
+        <h5 id="degreeTemp"></h5>
         <br>
-        <p id="partnerAndChildren"></p>
-        <p id="locationAndJobTitle"></p>
+        <h5 id="fahTemp"></h5>
 
 
     </div>
-    <script src="/js/mystic-gary.js"></script>
+    <script src="/js/temperature-converter.js"></script>
 </body>
 
 </html>
