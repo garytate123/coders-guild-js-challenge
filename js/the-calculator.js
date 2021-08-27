@@ -46,6 +46,4 @@ function percentOf_1(){
 
 // Percentage of a number ends 
 
-function outOfOrder(){
-    alert("This function is out of order. Please try another one that's not red");
-}
+
