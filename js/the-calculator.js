@@ -30,7 +30,20 @@ function halfNumber(num){
 
 }
 
-
-
 // Half Number function ends
+
+
+// Percentage of a number starts 
+
+function percentOf_1(){
+    let firstNumber = prompt("Please enter the number that you would like to know the percentage of.");
+    let secondNumber = prompt("Please enter the amount of percentage you would like to know.");
+
+    let percent = (secondNumber / 100) * firstNumber;
+
+    document.getElementById("percentOf").innerHTML = "percent is " + firstNumber + " is " + percent + "%";
+}
+
+// Percentage of a number ends 
+
 
