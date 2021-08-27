@@ -26,6 +26,8 @@ function halfNumber(num){
     let number = Number.parseInt(num);
     let resultHalf = Number.parseInt(number) / Number.parseInt(number);
     document.getElementById("halfNumber").innerHTML = "The result of halving the number " + number + " is " + resultHalf; 
+    document.getElementById("errorMessage").innerHTML = "There is an error with this function.";
+
 }
 
 
