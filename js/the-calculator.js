@@ -5,8 +5,8 @@ function squareNumber_1(){
     squareNumber(num);
 }
 
-function squareNumber(num){
-    let number = num;
+function squareNumber(numSquared){
+    let number = numSquared;
     let result = number * number;
     document.getElementById("squareNumber").innerHTML = "The result of squaring the number " + number + " is " + result 
 }
@@ -16,18 +16,15 @@ function squareNumber(num){
 // Half Number function starts
 
 function halfNumber_1(){    
-    let num = prompt("Please enter a number that you would like to half.");
-    halfNumber(num);
+    let numToBeHalved = prompt("Please enter a number that you would like to half.");
+    halfNumber(numToBeHalved);
     // document.getElementById("halfNumber").innerHTML = "The result of halving the number " + halfNum + " is "; 
 }
 
-// I'm not sure why this function is working
-function halfNumber(num){
-    let number = Number.parseInt(num);
-    let resultHalf = Number.parseInt(number) / Number.parseInt(number);
-    document.getElementById("halfNumber").innerHTML = "The result of halving the number " + number + " is " + resultHalf; 
-    document.getElementById("errorMessage").innerHTML = "There is an error with this function.";
-
+function halfNumber(numToBeHalved){
+    let halvedNumber = numToBeHalved / 2;
+    document.getElementById("halfNumber").innerHTML = "The result of halving the number " + numToBeHalved + " is " + halvedNumber; 
+    return halvedNumber;
 }
 
 // Half Number function ends
@@ -46,13 +43,47 @@ function percentOf_1(){
 
 // Percentage of a number ends 
 
-function areaOfCircle(){
-    let areaOfCircle = prompt("What the radius of the circle that you would like to know the ares of?");
-    let newAreaOfCircle = areaOfCircle * areaOfCircle;
+// Area of a Circle starts here 
+
+function areaOfCircle_1(){
+    let areaOfCircleNumber = prompt("What the radius of the circle that you would like to know the ares of?");
+    areaOfCircle(areaOfCircleNumber);
+
+}
+
+function areaOfCircle(areaOfCircleNumber){
+    let newAreaOfCircle = areaOfCircleNumber * areaOfCircleNumber;
     newAreaOfCircle = newAreaOfCircle * 3.14159265359;
     newAreaOfCircle = Math.round(newAreaOfCircle * 100) / 100;
-    alert("The area for a circle with the radius is " + areaOfCircle + " is " + newAreaOfCircle); 
+    document.getElementById("areaOfCircle").innerHTML = "The area for a circle with the radius of " + areaOfCircleNumber + " is " + newAreaOfCircle;
+
+}
+
+// Area of a Circle starts ends
+
+// Final function starts here
+function finalFunction(){
+    // Enter a number save in variable 
+    let finalNumber = prompt("Please enter a number. This function will take your number and then use the other function to half the number, square it, calculate the area of a circle and then give you a percentage as a result.");
+    
+    // pass the number to the function to half it and save in new variable
+    let newFinalHalvedNumber = halfNumber(finalNumber);
+    
+    // pass the halved number to the function to square it and save in new variable
+    let newFinalSquaredNumber = squareNumber(newFinalHalvedNumber);
+
+    // pass the squared number to the area of a circle function
+    let newAreaOfCircleNumber = areaOfCircle(newFinalSquaredNumber);
+
+    // pass the radius number to the percentage function and use the squared number to find the final percentage
+    
+    // alert(newFinalNumber);
+    document.getElementById("finalFunction").innerHTML = "The number you entered is... " + finalNumber;
+
 
 
 }
+
+
+// Area of a Circle ends here 
 
