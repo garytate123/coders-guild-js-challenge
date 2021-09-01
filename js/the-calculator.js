@@ -46,4 +46,13 @@ function percentOf_1(){
 
 // Percentage of a number ends 
 
+function areaOfCircle(){
+    let areaOfCircle = prompt("What the radius of the circle that you would like to know the ares of?");
+    let newAreaOfCircle = areaOfCircle * areaOfCircle;
+    newAreaOfCircle = newAreaOfCircle * 3.14159265359;
+    newAreaOfCircle = Math.round(newAreaOfCircle * 100) / 100;
+    alert("The area for a circle with the radius is " + areaOfCircle + " is " + newAreaOfCircle); 
+
+
+}
 
