@@ -25,13 +25,10 @@ let books = [
 ]
 function showBookList(){
     for (let i = 0; i < books.length; i++){
-        
         let bookList = document.createElement("li");
         bookList.innerHTML = books[i].title + " by " + books[i].author;
-        document.getElementById("bookList").appendChild(bookList);
-        
+        document.getElementById("bookList").appendChild(bookList);   
     }
-
 }
 
 
