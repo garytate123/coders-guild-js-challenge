@@ -4,7 +4,7 @@ function convertDegToFah(){
    
     let fahrenheit = degree * 9 / 5 + 32;
 
-    document.getElementById("degreeTemp").innerHTML = degree + "&#176 Degrees Celsius is " + fahrenheit + "&#176 in Fahrenheit" ;
+    document.getElementById("degreeTemp").innerHTML = degree + "&#176 Degrees Celsius is " + fahrenheit + "&#176 in Fahrenheit." ;
 }
 
 function convertFahToDeg(){
