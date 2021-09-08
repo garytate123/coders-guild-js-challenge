@@ -1,5 +1,4 @@
 // Output your fortune to the screen like so: “You will be a X in Y, and married to Z with N kids.”
-
 // number of children
 let numberOfChildren = 0;
 
@@ -25,10 +24,7 @@ function mysticGary(){
     let randomLocation = futureLocation[Math.floor(Math.random() * futureLocation.length)];
     let randomJobTitle = jobTitle[Math.floor(Math.random() * jobTitle.length)];
 
-
     document.getElementById("garysMessage").innerHTML = "Gary has had a good look into your future, and has seen the follow...";
     document.getElementById("partnerAndChildren").innerHTML = "Your partner will be called " + randomPartnersName + " and you will have " + numberOfChildren + " " + childMessage;
     document.getElementById("locationAndJobTitle").innerHTML = "You will live in " + randomLocation + " and your job title will be " + randomJobTitle + ".";
-
-
 }

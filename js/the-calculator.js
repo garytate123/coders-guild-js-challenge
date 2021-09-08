@@ -79,11 +79,6 @@ function finalFunction(){
     
     // alert(newFinalNumber);
     document.getElementById("finalFunction").innerHTML = "The number you entered is... " + finalNumber;
-
-
-
 }
-
-
 // Area of a Circle ends here 
 

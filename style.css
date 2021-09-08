@@ -31,10 +31,6 @@ font-size: 20px;
     color: #fff;
 }
 
-footer{
-    padding: 10px;
-}
-
 .listitem{
     color: red;
 }
@@ -42,3 +38,13 @@ footer{
 .random-img{
     margin: 10px;
 }
+
+.screenshot{
+    width: 100%;
+
+}
+
+footer{
+    padding: 10px;
+}
+
