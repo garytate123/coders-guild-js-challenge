@@ -1,6 +1,3 @@
-// 4. Create a new img element and set its src attribute to a picture of you. 
-// Append that element to the body.
-
 let pageBody = document.getElementsByTagName("body")[0];
 pageBody.style.fontFamily = "Arial, sans-serif";
 pageBody.style.margin = "20px";

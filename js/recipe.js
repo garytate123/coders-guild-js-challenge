@@ -1,18 +1,3 @@
-// Create an object to hold information on your favourite recipe. 
-// It should have properties for:
-
-// recipeTitle (a string)
-// servings (a number)
-// ingredients (an array of strings)
-// directions (a string)
-// Try displaying some information about your recipe.
-
-// Bonus: Create a loop to list all the ingredients.
-
-
-// Call your new method.
-
-
 let recipe = {
     recipeTitle: "Chocolate Brownies",
     servings: 16,
