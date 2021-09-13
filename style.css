@@ -11,6 +11,10 @@ padding: 2% 15% 2% 5%;
     padding: 10px 10px 10px 0;
 }
 
+a{
+    text-decoration: none;
+}
+
 .projectBtn{
     margin: 10px;
 }
