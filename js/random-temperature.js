@@ -7,6 +7,6 @@ function randomTemp(){
     
     let fahrenheit = temperature * 9 / 5 + 32;
 
-    document.getElementById("temp").innerHTML = "The random temperature is in degrees celsius is: " + temperature + "&#176 degrees celsius";
+    document.getElementById("temp").innerHTML = "The random temperature in degrees celsius is: " + temperature + "&#176 degrees celsius";
     document.getElementById("fahrenheit").innerHTML = "Which is: " + fahrenheit + "&#176 in fahrenheit."
 }

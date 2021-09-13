@@ -12,5 +12,5 @@ function convertFahToDeg(){
     
     let degree = (fahrenheit - 32) * 5 / 9;
     
-    document.getElementById("fahTemp").innerHTML = fahrenheit + "&#176 fahrenheit is " + degree + "&#176 Degrees Celsius." ;
+    document.getElementById("fahTemp").innerHTML = fahrenheit + "&#176 Fahrenheit is " + degree + "&#176 Degrees Celsius." ;
 }

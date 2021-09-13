@@ -38,7 +38,7 @@ function percentOf_1(){
 
     let percent = (secondNumber / 100) * firstNumber;
 
-    document.getElementById("percentOf").innerHTML = "percent is " + firstNumber + " is " + percent + "%";
+    document.getElementById("percentOf").innerHTML = secondNumber + " percent of " + firstNumber + " is " + percent + "%";
 }
 
 // Percentage of a number ends 
